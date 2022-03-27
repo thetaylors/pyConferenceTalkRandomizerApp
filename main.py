@@ -25,7 +25,7 @@ if __name__ == '__main__':
     talks = read_talks_file()
 
     # randomly pick talk
-    if args.count:
+    if args.count and random.choice([True, False]):
         random_num = random_talk_number(count=int(args.count))
         selected_talk = talks[random_num]
     else:
