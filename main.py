@@ -26,9 +26,12 @@ if __name__ == '__main__':
 
     # randomly pick talk
     if args.count and random.choice([True, False]):
+        print('Random talk out of most recent:')
         random_num = random_talk_number(count=int(args.count))
         selected_talk = talks[random_num]
     else:
         selected_talk = random.choice(talks)
 
     print(selected_talk)
+
+    input("Press 'Enter' to close...")
